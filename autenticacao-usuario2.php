@@ -23,20 +23,11 @@
 		$_SESSION['sess_usersisname']=$row['nome'];
 		echo $_SESSION['sess_userrole'];
 		session_write_close();
-		
-		switch ($_SESSION['sess_userrole']) {
-			case "admin":
+		if( $_SESSION['sess_userrole'] == "admin"){
 			header('Location: Admin/Admin-Home.php');
-			break;
-			
-			case "tecnico":
+			}elseif ( $_SESSION['sess_userrole'] == "tecnico"){
 			header('Location: Tecnico/Tecnico-Home.php');
-			break;
-			
-			case "subadim":
-			header('Location: SubAdmin/SubAdmin-Home.php');
-			break;
+			}
 		}
-	}
 	$dbh = null;
 ?>

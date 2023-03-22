@@ -46,7 +46,8 @@ $num = $execute->num_rows;
 					<ul class="dropdown-menu multi-level">
 						<li><a href="Abrir-chamado-sadmin.php">Abrir Chamado</a></li>
 						<li><a href="#">Deletar Chamado</a></li>	
-									
+						<li><a href="Chamados_abertos.php">Chamados em Aberto <span class="badge badge-danger"><?php echo $num;?></span></a></li>
+						<li><a href="Chamados_concluidos.php">Chamados Concluídos</a></li>			
 						<li><a href="Ver-chamados-sadmin.php">Listar Chamado</a></li>
 					</ul>
 				</li>

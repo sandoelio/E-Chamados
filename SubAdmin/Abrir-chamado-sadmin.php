@@ -83,7 +83,7 @@ $num = $execute->num_rows;
 				<label for="servi">Técnico:</label>
 				<?php
 					ini_set('default_charset','UTF-8');
-					$conn = new mysqli('localhost', 'root', '', 'u641666397_chama') 
+					$conn = new mysqli('localhost', 'u641666397_jose', '99963225', 'u641666397_chama') 
 					or die ('Cannot connect to db');
 					$result = $conn->query("select id, Nome from tecnicos");
 					echo "<select name='id'>"; //id

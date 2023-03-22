@@ -48,7 +48,9 @@ $num_paginas = ceil($num_total/$itens_por_pagina);
 				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Chamados<span class="caret"></span></a>
 					<ul class="dropdown-menu multi-level">
 						<li><a href="Abrir-chamado-sadmin.php">Abrir Chamado</a></li>
-									
+						<li><a href="Deletar-chamado-sadmin.php">Deletar Chamado</a></li>	
+						<li><a href="Chamados_abertos.php">Chamados em Aberto <span class="badge badge-danger"><?php echo $num;?></span></a></li>
+						<li><a href="Chamados_concluidos.php">Chamados Concluídos</a></li>			
 						<li><a href="Ver-chamados-sadmin.php">Listar Chamado</a></li>
 					</ul>
 				</li>		
